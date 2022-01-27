@@ -1,10 +1,11 @@
 import React, { memo } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { ProductsList } from 'drinksandco/src/containers/ProductsList';
 
 export const HomeScreen = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <ProductsList />
     </View>
   );
 };
