@@ -1,10 +1,14 @@
 import React, { memo } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import { ProductDetails } from 'drinksandco/src/containers/ProductDetails';
 
-export const DetailsScreen = () => {
+export const DetailsScreen = ({ route }) => {
+  console.log('route', route);
+  const { productId } = route.params || {};
+
   return (
     <View>
-      <Text>Details</Text>
+      <ProductDetails productId={productId} />
     </View>
   );
 };

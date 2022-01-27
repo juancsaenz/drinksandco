@@ -28,7 +28,13 @@ export const apiSlice = createApi({
       }),
       transformResponse: response => response.data,
     }),
+    getProduct: build.query<{}, string | void>({
+      query: id => ({
+        url: `products/${id}`,
+      }),
+      transformResponse: response => response.data,
+    }),
   }),
 });
 
-export const { useGetProductsQuery } = apiSlice;
+export const { useGetProductsQuery, useGetProductQuery } = apiSlice;

@@ -10,7 +10,7 @@ const { width } = Dimensions.get('window');
 export function ProductItem({ item }) {
   const navigation = useNavigation();
   const dimensionsStyle = {
-    width: width / 3 - 20,
+    width: width / 3 - 30,
     height: width / 3 + 30 - 8,
     padding: 0,
   };
@@ -19,7 +19,7 @@ export function ProductItem({ item }) {
     <View style={styles.view}>
       <Pressable
         onPress={() =>
-          navigation.push(mainStack.details, { contentId: item.id })
+          navigation.push(mainStack.details, { productId: item.id })
         }>
         <View style={styles.container}>
           <View style={dimensionsStyle}>
