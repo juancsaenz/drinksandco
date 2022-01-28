@@ -13,7 +13,6 @@ function ProductsList() {
       <FlatList
         data={data}
         keyExtractor={item => item.id}
-        numColumns={3}
         extraData={data}
         renderItem={({ item }) => <ProductItem item={item} />}
         showsVerticalScrollIndicator={false}

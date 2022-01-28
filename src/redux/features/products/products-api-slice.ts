@@ -7,8 +7,8 @@ export interface Product {
   attributes: {
     name: string;
     image_url: string;
-    original_unit_price: number;
-    current_unit_price: number;
+    original_unit_price: string;
+    current_unit_price: string;
     appellation: string;
     vintage: string;
   };

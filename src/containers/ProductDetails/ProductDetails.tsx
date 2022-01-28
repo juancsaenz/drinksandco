@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View } from 'react-native';
 import { useGetProductQuery } from 'drinksandco/src/redux/features/products/products-api-slice';
 import DetailItem from 'drinksandco/src/components/DetailItem';
 

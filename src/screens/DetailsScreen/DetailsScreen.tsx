@@ -2,7 +2,10 @@ import React, { memo } from 'react';
 import { View } from 'react-native';
 import { ProductDetails } from 'drinksandco/src/containers/ProductDetails';
 
-export const DetailsScreen = ({ route }) => {
+interface Props {
+  route: { params: { productId: string } };
+}
+export const DetailsScreen = ({ route }: Props) => {
   console.log('route', route);
   const { productId } = route.params || {};
 

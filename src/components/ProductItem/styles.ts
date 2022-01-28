@@ -1,34 +1,36 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
 
 export default StyleSheet.create({
   view: {
-    borderRadius: 5,
-    shadowColor: 'black',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-    margin: 4,
-    paddingVertical: 15,
-    paddingHorizontal: 5,
+    width: width - 30,
+    margin: 5,
   },
-  container: {
-    flex: 1,
-  },
-  moviePic: {
+  productPicture: {
     zIndex: 1,
     borderRadius: 5,
-    backgroundColor: '#F2F5F8',
+    backgroundColor: '#FFF',
+    width: 80,
+    height: 150,
   },
   contentText: {
     flexWrap: 'wrap',
     color: '#7F7F7F',
-    fontSize: 12,
-    height: 35,
-    paddingHorizontal: 2,
-    paddingTop: 5,
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  item: {
+    flexDirection: 'row',
+  },
+  description: {
+    margin: 15,
+    width: width / 1.5,
+  },
+  price: {
+    color: '#046be8',
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginVertical: 10,
   },
 });

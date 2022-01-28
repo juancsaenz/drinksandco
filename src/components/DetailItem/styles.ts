@@ -15,6 +15,7 @@ export default StyleSheet.create({
   name: {
     fontWeight: 'bold',
     fontSize: 30,
+    color: '#046be8',
   },
   price: {
     marginVertical: 15,

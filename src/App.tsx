@@ -6,16 +6,24 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { store } from './redux/store';
 
-function App() {
+const AppWrapper = () => {
   return (
     <Provider store={store}>
+      <App />
+    </Provider>
+  );
+};
+
+function App() {
+  return (
+    // <Provider store={store}>
       <NavigationContainer>
         <SafeAreaProvider>
           <MainStack />
         </SafeAreaProvider>
       </NavigationContainer>
-    </Provider>
+    // </Provider>
   );
 }
 
-export default App;
+export default AppWrapper;
